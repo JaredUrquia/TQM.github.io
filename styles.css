@@ -49,4 +49,9 @@ h1, h2 {
 
 .poema p, .piropo p {
     margin: 5px 0;
+    <style>
+    #backgroundMusic {
+        display: none; /* Oculta el reproductor de audio */
+    }
+</style>
 }
