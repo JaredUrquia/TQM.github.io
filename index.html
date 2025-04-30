@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carta con Poema y Música</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        #backgroundMusic {
-            display: none; /* Oculta el reproductor de audio */
-        }
-    </style>
+    
 </head>
 <body>
     <audio id="backgroundMusic" autoplay loop>
@@ -44,13 +40,5 @@
         <p>[Na-na, na-ra-ra]</p>
     </div>
 
-    <script>
-        // Reproducir la música de fondo al cargar la página
-        const backgroundMusic = document.getElementById('backgroundMusic');
-        backgroundMusic.play().catch(error => {
-            console.error("Error al intentar reproducir la música:", error);
-            console.warn("Es posible que la reproducción automática de audio esté bloqueada por el navegador. El usuario podría necesitar interactuar con la página para iniciar la reproducción.");
-        });
-    </script>
 </body>
 </html>
