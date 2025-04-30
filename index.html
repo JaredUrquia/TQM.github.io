@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta con Poema y Música</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #backgroundMusic {
+            display: none; /* Oculta el reproductor de audio */
+        }
+    </style>
+</head>
+<body>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="tu_musica.mp3" type="audio/mpeg">
+        <source src="tu musica ogg/Luck-Ra-DE-LA-MANO.ogg"
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <div class="carta">
+        <h1>Querido/a [lo que hay x aqui]</h1>
+        <p>Espero que al recibir esta carta, te encuentres bien. Quiero compartir contigo un poema que me inspira:</p>
+
+        <div class="poema">
+            <h2>Poema</h2>
+            <p>En el jardín de tus ojos,</p>
+            <p>las estrellas se hacen flores,</p>
+            <p>y en el susurro del viento,</p>
+            <p>se oyen dulces rumores.</p>
+            <p>Tu risa es la melodía,</p>
+            <p>que alegra mi corazón,</p>
+            <p>y en cada verso que escribo,</p>
+            <p>te llevo en mi canción.</p>
+        </div>
+
+        <div class="TQM">
+            <h2>TQM</h2>
+            <p>Si la belleza fuera tiempo, tú serías la eternidad.</p>
+        </div>
+
+        <p>Con cariño,</p>
+        <p>[Na-na, na-ra-ra]</p>
+    </div>
+
+    <script>
+        // Reproducir la música de fondo al cargar la página
+        const backgroundMusic = document.getElementById('backgroundMusic');
+        backgroundMusic.play().catch(error => {
+            console.error("Error al intentar reproducir la música:", error);
+            console.warn("Es posible que la reproducción automática de audio esté bloqueada por el navegador. El usuario podría necesitar interactuar con la página para iniciar la reproducción.");
+        });
+    </script>
+</body>
+</html>
